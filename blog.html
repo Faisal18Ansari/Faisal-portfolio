@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOG
+    </title>
+</head>
+<body>
+    <style>
+        .navbar>ul>li:hover
+        {
+            transform:scale(1.2);
+            color: red;
+        }
+        .navbar>ul>li
+        {
+            transition: all 300ms ease-in;
+        }
+        :root{
+            --color:#f19c12;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .navbar
+        {   
+            display:flex;
+            background-color: #f19c12;
+            gap:2rem;
+            border-bottom-left-radius: 2.5rem;
+            align-items: center;
+            padding: 1.5rem;
+            justify-content: space-between;
+            color:black;
+        }
+        .navbar>header>h1
+        {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .navbar>ul
+        {
+            display: flex;
+            list-style: none;
+        }
+        .navbar>ul>li>a
+        {   
+            text-decoration: none;
+            color: inherit;
+            font-size: 1.6rem;
+            margin-left: 1.3rem;
+        }
+        .imge
+        {
+            object-fit: contain;
+            width: 500px;
+        }
+        .container
+        {
+            display: flex;
+            justify-content: space-around;
+            align-items:center;
+            padding:2rem;
+        }    
+        .main
+        {
+            flex-direction: row-reverse;
+        }
+        .box
+        {   
+            box-sizing:border-box;
+            border-radius: 10%;
+            background-color: white;
+            color: black;
+            border:5px dashed var(--color);
+        }
+        .box>center>h2
+        {   
+            margin-top: 10px;;
+            text-decoration: underline;
+            font-weight: bold;
+            font-size: 230%;
+        }
+        .box>h4
+        {
+            text-decoration:underline;
+            margin-left: 9%;
+        }
+        .btn
+        {
+            padding:10px;
+            background-color: var(--color);
+            border: none;
+            border-radius:10%;
+            color: black;
+            margin-top: 10px;
+            font-weight: bold;
+            transition: all 300ms ease-in;
+        }
+        .btn:hover
+        {
+            cursor:pointer;
+            transform:scale3d(2,2,1);
+        }
+    </style>
+    <nav class="navbar">
+        <header>
+            <h1>
+                TOP BLOGS
+            </h2>
+        </header>
+        <ul>
+            <li><a href=home.html>Home</a></li>
+            <li><a href=home.html>Skills</a></li>
+            <li><a href=project.html>Projects</a></li>
+            <li><a href=blog.html>Blog</a></li>
+        </ul>
+    </nav>
+    <section class="container main">
+        <img src="tekken.jpg" alt="Tekken"width="500px" height="350px">
+        <div class="box">
+            <center><h2>Fighting Games: A Great Yet Aging Genre</h2></center><br>
+            <pre>
+                Back in the 90s, 2D fighting games were pop-cultural phenomena during the golden age of Arcades. 
+                As a gamer, I spent countless hours perfecting my skills in games such as Tekken. 
+                However, as a game creator today, I can't help but hold a critical view of this 
+                aging genre as it becomes progressively harder to attract the new generation of players.
+            </pre><br>
+            <h4>
+                Hard to play, extreme to master
+            </h4><br>
+            <pre>
+                The difficulty of mastering the controls creates an experience gap between new and older players. 
+                When a new fighting game is released, veteran players adapt quickly due to their familiarity with 
+                the learning curve from previous titles. In contrast, new players must invest time to learn the 
+                controls, and by the time they become proficient,experienced players are already ahead in the competition.    
+                This discrepancy can lead to discouragement and cause new players to drop out of the game.
+            </pre><br>
+            <h4>
+                2D camera layout
+            </h4><br>
+            <pre>
+                The camera may not be an inherent problem, but it,s essential to comprehend its design significance
+                as it plays a role in the overall difficulty of playing a fighting game. Street Fighter drew inspiration
+                from Kung-Fu Master, which featured a horizontal 2D camera-a common perspective in older games.
+                However,for new players accustomed to 3D spatial movement, this camera style might feel unusual when 
+                combined with the tricky controls.
+            </pre><br>
+            <h4>
+                Conclusion
+            </h4><br>
+            <pre>
+                Don't get me wrong; I'm not trying to bash the fighting games genre. But because this genre is so dear to me,
+                I think honestly that no matter how many new versions of Guilty Gear or The King of Fighters are released, 
+                or hoping that a new Street Fighter will miraculously save the genre, or waiting for a potential new fighting 
+                games as long as this genre relies on an arcade-based design,
+                it will always remain stagnant among a niche of aging players
+            </pre>
+        </div>
+    </section>
+    <div class="container">
+        <a href="home.html"><button class="btn">HOME PAGE</button></a>
+    </div>
+</body>
+</html>
