@@ -21,6 +21,21 @@
             display: flex;
             justify-content: end;
         }
+        .cont
+        {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 2rem;
+        }
+        .navbar>ul>li:hover
+        {
+            transform:scale(1.2);
+            color: red;
+        }
+        .navbar>ul>li
+        {
+            transition: all 300ms ease-in;
+        }
         .navbar
         {   
             display:flex;
@@ -137,8 +152,8 @@
         <ul>
             <li><a href=home.html>Home</a></li>
             <li><a href=home.html>Skills</a></li>
-            <li><a href=project.html>Projects</a></li>
             <li><a href=blog.html>Blog</a></li>
+            <li><a href=achi.html>Achievements</a></li>
         </ul>
     </nav>
     <section class="box">
@@ -172,5 +187,8 @@
         </li>
         </ol>
     </section>
+    <div class="cont">
+        <a href="home.html"><button class="btn">HOME PAGE</button></a>
+    </div>
 </body>
 </html>

@@ -19,11 +19,6 @@
         .container
         {
             display: flex;
-            justify-content: end;
-        }
-        .cont
-        {
-            display: flex;
             justify-content: space-around;
             margin-bottom: 2rem;
         }
@@ -42,15 +37,6 @@
         {
             font-size: 2rem;
             font-weight: bold;
-        }
-        .navbar>ul>li:hover
-        {
-        transform:scale(1.2);
-        color: red;
-        }
-        .navbar>ul>li
-        {
-        transition: all 300ms ease-in;
         }
         .navbar>ul
         {
@@ -75,6 +61,15 @@
             color: black;
             border:5px solid var(--color);
             padding: 1.5rem 1.5rem 2rem 1.5rem; 
+        }
+        .navbar>ul>li:hover
+        {
+            transform:scale(1.2);
+            color: red;
+        }
+        .navbar>ul>li
+        {
+            transition: all 300ms ease-in;
         }
         .box>ol>li
         {
@@ -151,6 +146,11 @@
               display: flex;
               gap: 1rem;
             }
+            .imge
+            {
+                object-fit: contain;
+                width: 500px;
+            }
           }
     </style>
     <nav class="navbar">
@@ -164,51 +164,33 @@
             <li><a href=home.html>Skills</a></li>
             <li><a href=project.html>Projects</a></li>
             <li><a href=blog.html>Blog</a></li>
+            <li><a href=achi.html>Achievements</a></li>
+
         </ul>
     </nav>
     <section class="box">
         <ol class="ol">
             <li>
-            GD Competetion 7<sup>th</sup> place winner.
-            <pre>
-            GD Competetion abbreviation of Group Discussion Competetion was held 
-            in my college <i>Institue of Innovation in Technology and Management</i> 
-            during my 2<sup>nd</sup>semester in the month of March from 24-25 March.
-            It was organized by the Internship cell of my college <i>INTERNWARE</i>
-            In association with the <i>MANAGEMENT CLUB.</i>
-            It was a thrilling event with many fierce competitors and after a round 
-            of difficult selection I managed to get into 20-30 selected participents.
-            And finally succeeded in grabbing the 7<sup>th</sup> place and also the 
-            <span>Golden Ticket</span> allowing me to get a lead ahead of everyone for the
-            Internship selections in my coming 4<sup>th</sup> semester.
-            </pre>    
-            <div class="container">
-            <a href="cert.html"><button class="btn">VIEW CERTIFICATE</button></a>
-            </div>
-        </li>
+            GD COMPETETION Certification.
+            </li><br><br>
+            <center><img src="gd1.jpg" 
+            class="imge"
+            alt="GD COMPETETION CERTIFICATE">
+            </center>
         </ol>
     </section>
     <section class="box">
-        <ol class="ol"  start="2">
+        <ol class="ol">
             <li>
-            LAN GAMING 2<sup>nd</sup> place winner.
-            <pre>
-            <i>LAN GAMING</i> was a subevent held during the event <i>TECHTONICS</i>
-            in my college during my first semester of the college.
-            It was a large scale event in itself and I took part in various other actvities
-            like "What the BUG".
-            I participated in the game <i>NEED FOR SPEED</i> with several others including
-            <i>Counter Strike GLobal Offensive</i>.
-            After a gruilling hard fought battle with other players of equally good caliber 
-            I mannaged to get the certificate of <span>2<sup>nd</sup> place</span>
-            </pre>    
-            <div class="container">
-            <a href="cert.html"><button class="btn">VIEW CERTIFICATE</button></a>
-            </div>
-        </li>
+            LAN GAMING Certification.
+            </li><br><br>
+            <center><img src="tech.jpg" 
+            class="imge"
+            alt="LAN GAMING CERTIFICATE">
+            </center>
         </ol>
     </section>
-    <div class="cont">
+    <div class="container">
         <a href="home.html"><button class="btn">HOME PAGE</button></a>
     </div>
 </body>
