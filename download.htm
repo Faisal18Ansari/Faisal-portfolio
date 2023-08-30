@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+</head>
+<body>
+    <style>
+        :root{
+            --color:#f19c12;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .navbar
+        {   
+            display:flex;
+            background-color: #f19c12;
+            gap:2rem;
+            border-bottom-left-radius: 2.5rem;
+            align-items: center;
+            padding: 1.5rem;
+            justify-content: space-between;
+            color:black;
+        }
+        .navbar>header>h1
+        {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .navbar>ul
+        {
+            display: flex;
+            list-style: none;
+        }
+        .navbar>ul>li>a
+        {   
+            text-decoration: none;
+            color: inherit;
+            font-size: 1.6rem;
+            margin-left: 1.3rem;
+        }
+        .container
+        {
+            display: flex;
+            justify-content: space-around;
+            align-items:center;
+            padding:2rem;
+        }
+        .intro
+        {
+            transform: scale(1.5);
+        }
+        .intro>h2>span
+        {
+            color: #f19c12;
+        }
+        .intro>p
+        {
+            text-transform: capitalize;
+            color: rgb(97, 96, 96);
+        }
+        .main
+        {
+            flex-direction: row-reverse;
+        }
+        .skills
+        {
+            flex-direction: row;
+        }
+        .imge
+        {
+            object-fit: contain;
+            width: 500px;
+        }
+        .skills_grid
+        {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,1fr);
+            gap: 1.3rem;
+        }
+        .navbar>ul>li:hover
+        {
+            transform:scale(1.2);
+            color: red;
+        }
+        .navbar>ul>li
+        {
+            transition: all 300ms ease-in;
+        }
+        .skills_grid>span
+        {   
+            border:5px solid var(--color);
+            border-radius: 100%;
+            padding:4rem 1rem 4rem 1rem;
+            display: flex;
+            flex-direction: column;
+            gap:10px;
+            align-items: center;
+        }
+        .btn
+        {
+            padding:10px;
+            background-color: var(--color);
+            border: none;
+            border-radius:10%;
+            color: black;
+            margin-top: 10px;
+            font-weight: bold;
+            transition: all 300ms ease-in;
+        }
+        .btn:hover
+        {
+            cursor:pointer;
+            transform: translateY(-3px);
+        }
+        .btn_outline
+        {
+            background-color: white;
+            border: 2px solid var(--color);
+        }
+        @media screen and (max-width: 675px) {
+            .imge {
+              width: 200px;
+            }
+    
+            .container {
+              flex-direction: column;
+              gap: 2rem;
+            }
+    
+            .intro {
+              transform: scale(1);
+            }
+    
+            .navbar {
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              gap: 1rem;
+            }
+            .navbar > ul a {
+              display: flex;
+              gap: 1rem;
+            }
+          }
+    </style>
+    <nav class="navbar">
+        <header>
+            <h1>
+                Faisal Mujahid
+            </h2>
+        </header>
+        <ul>
+            <li><a href=#home>Home</a></li>
+            <li><a href=#skills>Skills</a></li>
+            <li><a href=#Projects>Projects</a></li>
+            <li><a href=#Blog>Blog</a></li>
+            <li><a href=#Achievements>Achievements</a></li>
+        </ul>
+    </nav>
+    <section class="container main" id="home">
+        <img src="gaming.png"
+        alt="Game Developer"
+        class="imge">
+        <div class="intro">
+            <h2>Hi I'm <span>Faisal Mujahid.</span></h2>
+            <p>I'm a Game Developer.</p>
+        </div>
+    </section>
+    <section class="container skills" id="skills">
+        <img src="skills.png"
+        alt="Skills"
+        class="imge" height="400px">
+        <div class="skills_grid">
+            <span>
+                <h2>Unreal Engine</h2>
+                <p>99</p>
+            </span>
+            <span>
+                <h2>Unity Enigne</h2>
+                <p>99</p>
+            </span>
+            <span>
+                <h2>Python</h2>
+                <p>99</p>
+            </span>
+            <span>
+                <h2>C++</h2>
+                <p>99</p>
+            </span>
+        </div>
+    </section>
+    <section id="Projects" class="container main">
+        <img src="projects.png" class="imge" height="500px" alt="Projects">
+        <div class="intro">
+            <h2>I have several <span>Projects.</span></h2>
+            <p> Like Flappy Bird, Super Mario, </p>
+            <p> To view the projects Please follow the link below.</p>
+            <a href='/project'><button class="btn">PROJECTS</button></a>
+        </div>
+    </section>
+    <section class="container skills" id="Blog">
+        <img src="blog.png"  class="imge" alt="Blog">
+        <div class="intro" >
+            <h2> Here are some <span>Top Blogs </span>written by me.</h2>
+            <p> Top view the blogs Please follow the link below. </p>
+            <a href='/blog'><button class="btn btn_outline">BLOGS</button></a>
+        </div>
+    </section>
+    <section id="Achievements" class="container main" >
+        <img src="winner.png"
+        alt="Achievements"
+        class="imge">
+        <div class="intro">
+            <h2>Hi are some of my <span>Achievements.</span></h2>
+            <p>That I achieved during my college time till now..</p>
+            <a href='/achi'><button class="btn">ACHIEVEMENTS</button></a>
+
+        </div>
+    </section>
+</body>
+</html>
